@@ -19,7 +19,7 @@ public class Parabolicshot
         float g = 9.81f;
         float y0 = initialPosition.y;
         float v0y= initialVelocity.y;
-        float result = (v0y + Mathf.Sqrt(v0y + v0y + 2 * g * y0)) / g;
+        float result = (v0y + Mathf.Sqrt(v0y * v0y + 2 * g * y0)) / g;
         return result;
     }
 }
