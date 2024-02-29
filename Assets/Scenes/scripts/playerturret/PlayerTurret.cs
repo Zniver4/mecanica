@@ -10,6 +10,7 @@ public class PlayerTurret : MonoBehaviour
     public float bulletSpeed, bulletLifeSpan;
     public Transform shootPoint;
     public GameObject bulletPrefab;
+    public Transform impact;
 
     void Update()
     {
@@ -20,6 +21,10 @@ public class PlayerTurret : MonoBehaviour
         {
             Fire();
         }
+        Vector3 P0 = shootPoint.position;
+        Vector3 V0 = bulletSpeed * shootPoint.forward;
+        float T = Parabolicshot.Flyingtime(P0, V0);
+        impact.position = Parabolicshot.position(T, P0, V0);
     }
 
     void HorizontalRotation()

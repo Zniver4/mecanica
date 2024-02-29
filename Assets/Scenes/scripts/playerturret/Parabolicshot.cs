@@ -14,7 +14,7 @@ public class Parabolicshot
         Vector3 gravity = new Vector3 (0, -9.81f,0);
         return gravity * time + initialVelocity;
     }
-    public float Flyingtime(Vector3 initialPosition,Vector3 initialVelocity)
+    public static float Flyingtime(Vector3 initialPosition,Vector3 initialVelocity)
     {
         float g = 9.81f;
         float y0 = initialPosition.y;
