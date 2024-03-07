@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oscillatorPrefab: {fileID: 8512749624924623971, guid: 104086bfdea2e3248ac02ee3754a08b0, type: 3}
-  oscillatorNum: 50
+  oscillatorNum: 10
 --- !u!1 &1980202527
 GameObject:
   m_ObjectHideFlags: 0
