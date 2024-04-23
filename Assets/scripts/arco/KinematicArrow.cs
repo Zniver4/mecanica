@@ -8,13 +8,14 @@ public class KinematicArrow : MonoBehaviour
     public bool fired;
     public Transform shootPoint;
     float time;
+    /*
     void Start()
     {
         fired = false;
         GetComponent<TrailRenderer>().Clear();
         GetComponent<TrailRenderer>().emitting = false;
     }
-
+    */
     // Update is called once per frame
     void Update()
     {
@@ -22,13 +23,15 @@ public class KinematicArrow : MonoBehaviour
         {
             time += Time.deltaTime;
             transform.position = ArrowPosition();
-            transform.forward = ArrowVelocity();
+            //transform.forward = ArrowVelocity();
         }
+        /*
         else
         {
             transform.position = shootPoint.position;
             transform.rotation = shootPoint.rotation;
         }
+        */
     }
 
     Vector3 ArrowPosition()
